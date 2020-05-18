@@ -1,0 +1,36 @@
+.intro, .finish {
+    padding: 10px 0;
+    text-align: center;
+}
+.text {
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+.text h2 {
+    color: blue;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.quiz {
+    padding: 10px 0;
+    background-color: #005ce6;
+}
+.question {
+    margin: 50px 0;
+    text-align: left;
+}
+.question p {
+    margin: 10px 20px;
+    color: gainsboro;
+    font-size: 2.2em;
+}
+
+.check {
+    margin: 20px 40px;
+    color: gainsboro;
+    font-size: 1.6em;
+}

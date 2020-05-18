@@ -1,0 +1,38 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-size: 20px;
+    
+}
+h1{
+    color: lightsalmon;
+    padding: 10px;
+    text-shadow: 5px 5px 5px rgb(236, 183, 167);
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+    background-color: rgb(243, 214, 228);
+    color: rgb(216, 121, 137);
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid lightsalmon;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightsalmon;
+}
+input[type='text']{
+    width:300px;
+    font-size: 20px;
+    color: pgb(236, 88, 30);
+}
+input:focus{
+    outline:none;
+    box-shadow: 0 0 10px lightsalmon;
+}

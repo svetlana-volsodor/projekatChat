@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista za kupovinu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista za kupovinu</h1>
+    <ul>
+        <li>Jabuke</li>
+        <li>tresnje</li>
+        <li>jagode</li>
+    </ul>
+    <input type="text" name="newTask" id="newTask">
+    <br>
+    <input type="radio" name="addTask" id="append" value="append" checked>Append
+    <input type="radio" name="addTask" id="prepend" value="prepend">Prepend
+
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAseLLbscMsHPEmLC09wittNXSFHhIPOms",
+        authDomain: "drugi-projekat.firebaseapp.com",
+        databaseURL: "https://drugi-projekat.firebaseio.com",
+        projectId: "drugi-projekat",
+        storageBucket: "drugi-projekat.appspot.com",
+        messagingSenderId: "174173822908",
+        appId: "1:174173822908:web:412289659232b6d142d5b9",
+        measurementId: "G-LNPKGFPCLR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    let db = firebase.firestore();
+    </script>
+    <script src="script1.js"></script>
+</body>
+</html>

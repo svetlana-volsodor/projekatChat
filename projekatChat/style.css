@@ -1,0 +1,130 @@
+/* Opšta podešavanja */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: purple;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(70,9,70);
+    cursor: pointer;
+}
+form{
+    margin: 5px;
+    width: 100%;
+}
+input, textarea{
+    font-size: 20px;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+input:focus, textarea:focus{
+    outline-width: 0px;
+    border: 3px solid purple;
+    border-radius: 5px;
+}
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+    
+
+.btn:focus{
+    outline-width: 0px;
+}
+/* Pozicioniranje: header, footer, ul */
+header, footer, ul{
+    position: absolute;
+    /* Postaviti centralno */
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+header{
+    top: 0;
+    height: 25%;
+}
+footer{
+    bottom: 0;
+    height: 20%;
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+    /* Pozicioniranje ispod top sekcije i iznad bottom sekcije */
+    top: 25%;
+    bottom: 20%;
+    /* ul centralno postavljena, ali tekst levo poravnat */
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    /* dodamo skrolovanje poruka */
+    overflow-y: auto;
+    /* prelom bilo koje reči bez razmaka */
+    word-wrap: break-word;
+}
+ul>li{
+    width: 60%;
+    background-color: thistle;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 20px; 
+}
+.me{
+    margin-left: auto;
+    background-color: bisque !important;
+    border-radius: 20px 0px 20px 20px !important;
+}
+.username{
+    font-weight: bold;
+}
+.date{
+    color: grey;
+}
+#divUpdatedUsername{
+    font-size: 20px;
+}
+#spanNewUsername{
+    font-weight: bold;
+}
+
+.btn-selected{
+    background-color: rgb(50, 10, 50);
+    color: bisque;
+}
+/* Tablet i mobilni telefon */
+@media only screen and (max-width: 850px) {
+    h1, h2{
+        font-size: 20px;
+    }
+    button.btn, input, textarea{
+        width: 45%;
+        font-size: 15px !important;
+        margin-bottom: 3px !important;
+        padding: 0px !important;
+    }
+    ul{
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+    ul>li{
+        padding: 10px;
+    }
+}
